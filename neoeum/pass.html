@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>너음 | 이용권 - 전체 이용권</title>
+	<style>
+		hr { background-color: #B9CCE7; height: 3px; border: 0px; }
+		.search { position: absolute; left: 1100px; top: 150px; }
+		.font-bold{ font-weight: bold; font-size: 20px; }
+		a {text-decoration: none}
+		.img { width: 100px; height: 100px; }
+		#bigger:hover{ position: relative; width: 200px; height: 200px; }
+		.bgm { position: absolute; left: 1100px; top: 10px; width: 5%; 	}
+		.intro { position: absolute; left: 1150px; top: 890px; 
+			color: grey;}
+		.mcount{ position: absolute; left: 1100px; top: 68px; }
+		th { text-align: left; padding: 25px; font-size: 15px; color: lightgrey; }
+		@keyframes textColorAnimation {
+			0% { color : green; }
+			30% { color : white; }
+			100% { color : black; }
+		}
+		span {
+			animation-name : textColorAnimation;
+			animation-duration : 4s;
+			animation-iteration-count : infinite;
+		}
+		p1 { background-color: #B9CCE7;	}
+		div.box { display: inline-block; position: relative; background-color: lightgrey; padding : 60px; border-radius: 20px;}
+	</style>
+
+	<!--홈페이지 상단-->
+	<br>
+		<p class="p1">
+			&emsp;&emsp;<a href="main.html"><img src="logo1.jpg" width="200" height="117"></a>
+			&emsp;&emsp;&emsp;<a href="my.html"><img src="my.png" width="130" height="50" onmouseover="this.src='my_c.png'" onmouseleave="this.src='my.png'"></a>
+			&emsp;<a href="chart.html"><img src="chart.png" width="130" height="50" onmouseover="this.src='chart_c.png'" onmouseleave="this.src='chart.png'"></a>
+			&emsp;<a href="new.html"><img src="new.png" width="130" height="50" onmouseover="this.src='new_c.png'" onmouseleave="this.src='new.png'"></a>
+			&emsp;<a href="pass.html"><img src="pass.png" width="130" height="50" onmouseover="this.src='pass_c.png'" onmouseleave="this.src='pass.png'"></a>
+		</p>
+	<div class= "search">
+		<form name="fo" method="get">
+			<input type="text" size="20" placeholder="검색어를 입력하세요.">
+			&nbsp;<button type="button">검색</button>
+		</form>
+		<br>
+		<small><p1><strong>급상승 검색어</strong><span>&emsp;아이유&emsp;</span></p1></small>
+	</div>
+	
+	<!--배경음악-->
+	<div class="bgm">
+		<audio src="크리스마스캐롤.mp3" controls loop>
+		크리스마스캐롤 </audio>
+	</div>
+</head>
+<body>
+	<hr>
+	<!--투표-->
+	<div class="mcount">
+		<a href="https://mcountdown.genie.co.kr/vote/pre"><img src="mcount.jpg" width="250" height="80"></a>
+	</div>
+	<!--회사소개-->
+	<div class="intro">
+		<fieldset>
+			<legend></legend>
+			<small>대표이사 : 김이레<br>
+			주소 : 부산광역시 남구 용소로 (대연동, 케이레컴퍼니)<br>
+			대표전화 : 010-4127-7947<br>
+			이메일 : naeum@naver.comm<br>
+			<br>
+			<strong>(주)케이레컴퍼니</strong></small>
+		</fieldset>
+	</div>
+
+	<!--광고-->
+	<marquee width="950">💖즐거운 크리스마스 보내세요💖<small>&emsp;|&emsp;지금 너음에 가입하면 이 모든 컨텐츠가 한달 무료!&emsp;|&emsp;너음에서 좋아하는 음악을 맘껏! 누리세요</small></marquee>
+
+	<!--하위-->
+	<p class="font-bold" style="text-align: center;">
+		<a href="pass.html" style="color: #B9CCE7">전체 이용권</a>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="mypass.html" style="color: black" onmouseover="this.style.color='#B9CCE7'" onmouseleave="this.style.color='black'">나의 이용권</a>
+	</p>
+	<script>
+		function button1_click(){
+		var type = prompt("결제방법을 선택해주세요 (카드결제, 휴대폰, 무통장결제)");
+		alert("결제되었습니다.")
+		}
+	</script>
+	<br><br><br>
+	<div style="text-align: center">
+		&emsp;&emsp;&emsp;&emsp;
+		<div class="box">
+			<big><strong>무제한 듣기 + 오프라인 재생</strong></big><br>
+			<br>
+			<small>기기제한 없음, 무제한 스트리밍, 오프라인 재생</small>
+			<br><br>
+			<input type="text" list="type"><br>
+			<figcaption><datalist id="type">
+				<option value = "정기결제 | 10900원"></option>
+				<option value="skt 멤버십 30% 6개월 | 7630원"></option>
+				<option value="1개월권 | 11000원"></option>
+			</datalist></figcaption>
+			<br><br>
+			<button id="button1" onclick="button1_click();" style="width: 100px">구매</button1>
+		</div>
+		
+		&emsp;&emsp;&emsp;&emsp;
+		<div class="box">
+			<big><strong>무제한 듣기</strong></big><br>
+			<br>
+			<small>기기제한 없음, 무제한 듣기</small>
+			<br><br>
+		<input type="text" list="type"><br>
+		<figcaption><datalist id="type">
+			<option value = "정기결제 | 7900원"></option>
+			<option value="skt 멤버십 30% 6개월 | 5530원"></option>
+			<option value="1개월권 | 8000원"></option>
+		</datalist></figcaption>
+		<br><br>
+			<button id="button1" onclick="button1_click();" style="width: 100px">구매</button1>
+		</div>
+		<br><br><br>
+		&emsp;&emsp;&emsp;&emsp;
+		<div class="box">
+			<big><strong>300회 듣기</strong></big><br>
+			<br>
+			<small>기기제한 없음, 횟수 제한</small>
+			<br><br>
+		<input type="text" list="type"><br>
+		<figcaption><datalist id="type">
+			<option value="1개월권 | 4800원"></option>
+		</datalist></figcaption>
+		<br><br>
+			<button id="button1" onclick="button1_click();" style="width: 100px">구매</button1>
+		</div>
+		
+		&emsp;&emsp;&emsp;&emsp;
+		<div class="box">
+			<big><strong>모바일 무제한 듣기</strong></big><br>
+			<br>
+			<small>모바일 전용, 무제한 스트리밍</small>
+			<br><br>
+		<input type="text" list="type"><br>
+		<figcaption><datalist id="type">
+			<option value = "정기결제 | 6900원"></option>
+			<option value="skt 멤버십 30% 6개월 | 4830원"></option>
+			<option value="1개월권 | 7000원"></option>
+		</datalist></figcaption>
+		<br><br>
+			<button id="button1" onclick="button1_click();" style="width: 100px">구매</button1>
+		</div>
+		
+	</div>
+	<br><br>
+	<hr>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>너를 위한 음악, 너음</title>
+	<style>
+		hr { background-color: #B9CCE7; height: 3px; border: 0px; }
+		h3 { font-size: 5px; }
+		.font-bold { font-weight: bold; font-size: 20px; }
+		a {text-decoration: none; color: black;}
+		input:hover, textarea:hove { background: aliceblue; }
+		.search { position: absolute; left: 1100px; top: 150px; }
+		.login { position: absolute; left: 1100px; top: 250px; }
+		.intro { position: absolute; left: 1100px; top: 850px; 
+			color: grey;}
+		.bgm { position: absolute; left: 1100px; top: 10px; width: 5%; }
+		.mcount{ position: absolute; left: 1100px; top: 450px; }
+		.video { position: absolute; left: 1100px; top: 550px; }
+		div { display: inline-block; position: relative; }
+		@keyframes textColorAnimation {
+			0% { color : green; }
+			30% { color : white; }
+			100% { color : black; }
+		}
+		span {
+			animation-name : textColorAnimation;
+			animation-duration : 4s;
+			animation-iteration-count : infinite;
+		}
+		p.searchcolor { background-color: #B9CCE7; }
+	</style>
+
+	<!--홈페이지 상단-->
+	<br>
+	<p>
+		&emsp;&emsp;<a href="main.html"><img src="logo1.jpg" width="200" height="117"></a>
+		&emsp;&emsp;&emsp;<a href="my.html"><img src="my.png" width="130" height="50" onmouseover="this.src='my_c.png'" onmouseleave="this.src='my.png'"></a>
+		&emsp;<a href="chart.html"><img src="chart.png" width="130" height="50" onmouseover="this.src='chart_c.png'" onmouseleave="this.src='chart.png'"></a>
+		&emsp;<a href="new.html"><img src="new.png" width="130" height="50" onmouseover="this.src='new_c.png'" onmouseleave="this.src='new.png'"></a>
+		&emsp;<a href="pass.html"><img src="pass.png" width="130" height="50" onmouseover="this.src='pass_c.png'" onmouseleave="this.src='pass.png'"></a>
+	</p>
+
+	<!--검색창-->
+	<div class= "search">
+		<form name="fo" method="get">
+			<input type="text" size="20" placeholder="검색어를 입력하세요.">
+			&nbsp;<button type="button">검색</button>
+		</form>
+		<br>
+		<small><p class="searchcolor">
+				<strong>급상승 검색어</strong>
+				<span>&emsp;아이유&emsp;</span>
+		</p></small>
+	</div>
+
+	<!--배경음악-->
+	<div class="bgm">
+		<audio src="크리스마스캐롤.mp3" controls loop> 크리스마스캐롤 </audio>
+	</div>
+		
+</head>
+<body>
+	<hr>
+	<!--로그인-->
+	<div class= "login">
+		<form name="fo" method="get">
+			<fieldset>
+				<legend><h2>로그인</h2></legend>
+				<input type="text" size="15" placeholder="아이디"><br>
+				<input type="password" size="15" placeholder="비밀번호">
+				&nbsp;
+				<input type="submit" value="로그인">
+				<br>
+				<h3>아이디/비밀번호 찾기&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;회원가입</h3>
+			</fieldset>
+		</form>
+	</div>
+	
+	<!--투표-->
+	<div class="mcount">
+		<a href="https://mcountdown.genie.co.kr/vote/pre"><img src="mcount.jpg" width="250" height="80"></a>
+	</div>
+
+	<!--비디오-->
+	<div class="video">
+		<iframe width="400" height="230" src="https://www.youtube.com/embed/DBbg-heHvRU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<!--회사소개-->
+	<div class="intro">
+		<fieldset>
+			<legend></legend>
+			<small>대표이사 : 김이레<br>
+			주소 : 부산광역시 남구 용소로 (대연동, 케이레컴퍼니)<br>
+			대표전화 : 010-4127-7947<br>
+			이메일 : naeum@naver.comm<br>
+			<br>
+			<strong>(주)케이레컴퍼니</strong></small>
+		</fieldset>
+	</div>
+
+	<!--광고-->
+	<marquee width="950">💖즐거운 크리스마스 보내세요💖<small>&emsp;|&emsp;지금 너음에 가입하면 이 모든 컨텐츠가 한달 무료!&emsp;|&emsp;너음에서 좋아하는 음악을 맘껏! 누리세요</small></marquee>
+
+	<!--지금 인기있는 음악-->
+	<p class="font-bold">
+		&emsp;&emsp;&emsp;&emsp; 지금 인기있는 음악
+	</p>
+
+	<div style="text-align: center;">
+		&emsp;&emsp;&emsp;&emsp;<div>
+			<a href="chart.html"><img src="chart1.jpg" width="250" height="250" alt="chart1"><figcaption><strong>VVS (Feat.JUSTHIS)</strong></figcaption><figcaption><small>미란이,먼치맨,Khundi Panda,머쉬베놈</small></figcaption></a>
+		</div>
+		&emsp;&emsp;&emsp;&emsp;<div>
+			<a href="chart.html"><img src="chart2.jpg" width="250" height="250" alt="chart2" ><figcaption><strong>내일이 오면 (Feat.기리보이)</strong></figcaption><figcaption><small>릴보이 (LILBOI)</small></figcaption></a>
+		</div>
+		&emsp;&emsp;&emsp;&emsp;<div>
+			<a href="chart.html"><img src="chart3.jpg" width="250" height="250" alt="chart3" ><figcaption><strong>Dynamite</strong></figcaption><figcaption><small>방탄소년단</small></figcaption></a>
+		</div>
+	</div>
+
+	<!--오늘 발매 음악-->
+	<br><br>
+	<p class="font-bold">
+		&emsp;&emsp;&emsp;&emsp; 오늘 발매 음악
+	</p>
+	<div style="text-align: center">
+		&emsp;&emsp;&emsp;&emsp;
+		<div>
+			<a href="new.html"><img src="new1.jpg" width="250" height="250" alt="new1" ><figcaption><strong>언젠가 설명이 필요한 밤</strong></figcaption><figcaption><small>승희 (오마이걸)</small></figcaption></a>
+		</div>
+		&emsp;&emsp;&emsp;&emsp;
+		<div>
+			<a href="new.html"><img src="new2.jpg" width="250" height="250" alt="new2"><figcaption><strong>30분은 거절할까 봐</strong></figcaption><figcaption><small>준케이 (JUN.K)</small></figcaption></a>
+		</div>
+		&emsp;&emsp;&emsp;&emsp;
+		<div>
+			<a href="new.html"><img src="new3.jpg" width="250" height="250" alt="new3"><figcaption><strong>5가지 Christmas</strong></figcaption><figcaption><small>JAMIE (제이미)</small></figcaption></a>
+		</div>
+	</div>
+	<br><br><br>
+	<hr>
+</body>
+</html>
